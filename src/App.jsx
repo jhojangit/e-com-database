@@ -9,7 +9,7 @@ import Header from './components/shared/Header'
 import ProductId from './pages/ProductId'
 import Register from './pages/Register'
 import Login from './pages/Login'
-import Cart from './pages/cart'
+import Cart from './pages/Cart'
 import Purchases from './pages/Purchases'
 
 
