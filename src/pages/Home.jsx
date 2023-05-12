@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { useSelector } from 'react-redux'
 import CardProducts from '../components/home/cardProducts/CardProducts';
-import FilterCategory from '../components/home/filterCategory';
+import FilterCategory from '../components/home/FilterCategory';
 import FilterByPrice from '../components/home/FilterByPrice';
 import "./home.css"
 
