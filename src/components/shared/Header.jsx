@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Cart from '../../pages/cart'
+import Cart from '../../pages/Cart'
 import "./header.css"
 
 const Header = () => {
