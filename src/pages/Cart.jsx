@@ -12,10 +12,18 @@ const Cart = () => {
 
     const isLog = localStorage.getItem("token")
 
-    if (isLog) {
-        
+
+    function resvisar(isLog){
+        if (isLog) {
+            navigate("/")
+            window.location.reload(true)
+    
         
     }
+    } 
+
+    resvisar()
+
     
     const {buyThisCart, getAllProductsPurchases} = usePurchases()
 
