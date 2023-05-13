@@ -8,6 +8,7 @@ const Header = () => {
   const [isLog, setIsLog] = useState(localStorage.getItem("token"))
 
 
+  
 
   useEffect(() => {
     setIsLog(localStorage.getItem("token"))
@@ -23,13 +24,17 @@ const Header = () => {
 
               {
                 !isLog?
+                <>
+                  <li className='navbar__li'> <Link to="/">Home</Link>  </li>
                   <li className='navbar__li'> <Link to="/login">Login</Link>  </li>
-                  
+                  <li className='navbar__li'> <Link to="/register">Register</Link>  </li>
+                </>
                   :
               <>
+
                   <li className='navbar__li'> <Link to="/logOut">Log out</Link>  </li>
-                  <li className='navbar__li'> <Link to="/Cart">Cart</Link>  </li>
                   <li className='navbar__li'> <Link to="/register">Register</Link>  </li>
+                  <li className='navbar__li'> <Link to="/Cart">Cart</Link>  </li>
                   <li className='navbar__li'> <Link to="/purchases">Purchases</Link>  </li>
               </>
 
