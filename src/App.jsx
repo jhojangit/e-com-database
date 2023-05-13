@@ -11,6 +11,7 @@ import Register from './pages/Register'
 import Login from './pages/Login'
 import Cart from './pages/Cart'
 import Purchases from './pages/Purchases'
+import LogOut from './pages/LogOut'
 
 
 
@@ -37,6 +38,7 @@ function App() {
         <Route path='/' element={<Home/>} />
         <Route path='/register' element={<Register/>} />
         <Route path='/login' element={<Login/>} />
+        <Route path='/logOut' element={<LogOut/>} />
         <Route path='/product/:id' element={<ProductId/>} />
         <Route path='/cart' element={<Cart/>} />
         <Route path='/purchases' element={<Purchases/>} />

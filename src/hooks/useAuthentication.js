@@ -3,7 +3,10 @@ import axios from 'axios'
 
 
 
+
+
 const useAuthentication = () => {
+
 
     const createNewUser = data =>{
         const url = `https://e-commerce-api-v2.academlo.tech/api/v1/users`
@@ -12,6 +15,8 @@ const useAuthentication = () => {
 
         .catch(err => console.log(err))
     }
+
+
 
 
     const loginUser = data =>{
@@ -27,6 +32,7 @@ const useAuthentication = () => {
             localStorage.removeItem('token')
         })
     }
+
 
 
     return {createNewUser, loginUser}
